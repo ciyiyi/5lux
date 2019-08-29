@@ -1,0 +1,6 @@
+.rgba{width: 7.5rem;height: 12.5rem;background-color:rgba(0,0,0,0.6);position: absolute;top:.8rem;}
+.allCate{width: 80%;height: 12.5rem;background:#f2f2f2;position: absolute;right:0;font-size: 0.26rem;padding-left: 0.2rem;}
+.goodsTypeItem{display: flex;justify-content: space-between;height: 0.8rem;border-bottom: .02rem solid #ccc;line-height: 0.8rem;}
+.showItemUl{display: flex;flex-wrap: wrap;background:#fff;}
+.showItem{width: 30%;height: 0.88rem;line-height: 0.88rem;}
+.titlecc{width:7.5rem;background:#fff;position: fixed;top:0;left:0;height: 0.8rem;text-align: center;line-height: 0.8rem;font-size: .32rem;border-bottom:.02rem solid #ccc;}

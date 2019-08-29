@@ -6,4 +6,4 @@ const defaultState = {
 
 export default handleActions({
 
-},defaultState)
+},defaultState) 

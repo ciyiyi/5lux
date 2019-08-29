@@ -1,0 +1,6 @@
+.bottom{position: fixed;bottom:0;width: 100%;background-color:#fff;display: flex;height: 1rem;text-align: center;}
+.bottom .first{width: 15%;}
+.bottom img{margin:0 auto;margin-top:0.15rem;}
+.first1{border-right:0.02rem solid #999;}
+.bottom .btn{width:35%;background:#CCB27f;;line-height:1rem;color:#fff;font-size: 0.36rem;}
+.bottom .shop{background-color:#9B885F;}
