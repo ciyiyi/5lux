@@ -1,11 +1,11 @@
 import {createStore,combineReducers,applyMiddleware} from "redux"
 import reduxThunk from "redux-thunk"
-import home from "./reducers/home"
+import week from "./reducers/storelist"
 
-const reducer = combineReducers({
-    home
+const reducer=combineReducers({
+    week,
+  
 })
 
-const store = createStore(reducer,applyMiddleware(reduxThunk));
-
+const store=createStore(reducer,applyMiddleware(reduxThunk));
 export default store;

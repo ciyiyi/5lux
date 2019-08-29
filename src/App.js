@@ -1,13 +1,24 @@
-import React, { Component } from 'react';
-import Home from "./pages/home"
-export class App extends Component {
-  render() {
+import React, { Component } from 'react'
+import {routeConfig} from "@router"
+import DatePicker from 'antd/es/date-picker'; // 加载 JS
+import 'antd/es/date-picker/style/css'; // 加载 CSS
+// import 'antd/es/date-picker/style';         // 加载 LESS
+import {Switch,Redirect,Route} from "react-router-dom";
+import BaseRoute from "@common/baseRoute"
+
+
+export default class App extends Component {
+  render(){
     return (
-      <div>
-        <Home/>
-      </div>
-    );
+      <Switch>
+        <Redirect from="/" to="/arrival" exact/>
+        {
+          routeConfig.map((item,index)=>(
+           <BaseRoute key={index} {...item}/>
+          ))
+        }
+      </Switch>
+     )
   }
 }
 
-export default App;
