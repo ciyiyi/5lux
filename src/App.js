@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import Home from "./pages/home"
-export class App extends Component {
+import {routeConfig} from '@router';
+import {Switch,Redirect,Route} from 'react-router-dom';
+import BaseRoute from '@common/baseRoute';
+
+
+class App extends Component {
   render() {
     return (
-      <div>
-        <Home/>
-      </div>
+      <Switch>
+      <Redirect from="/" to="/brand" exact/>
+        {
+          routeConfig.map((item,index)=>(
+            <BaseRoute key={index} {...item}/>
+          ))
+        }
+      </Switch>
     );
   }
 }
