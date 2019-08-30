@@ -1,4 +1,4 @@
-import {HyperMarket,Brand,Classify,Title,Goods} from '@pages';
+import {HyperMarket,Brand,Classify,Title,Goods,Home,Login,Fashion,FashionDetial,Goodscc} from '@pages';
 
 export const tabBarRoute=[
     {

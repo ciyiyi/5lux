@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import {createAction} from "redux-actions"
 import {fashion_detial} from "@api/fashion"
-
+import {changeType_id,ChangeBrandsId} from './actionType';
 
 export const toDetailAction=(val,id)=>({
     type:"TODETAIL_PRODUCTION",
@@ -48,7 +48,7 @@ export const toShowFilterListAction=(id)=>({
     id
 })
 
-import {changeType_id,ChangeBrandsId} from './actionType';
+
 export const changeAction_id=(id)=>({
     type:changeType_id,
     id,
