@@ -7,9 +7,8 @@ import { connect } from "react-redux";
 import { mapStateToProps, mapDispatchToProps } from "./connect";
 class Goodscc extends Component {
     render() {
-        console.log(this.props.show1)
         return (
-            <div>
+            <div ref="div">
             {
                 this.props.show1 ? <Fragment><FashionTop/>
                 <GoodsccNav/></Fragment> : ''
@@ -22,9 +21,8 @@ class Goodscc extends Component {
         );
     }
     componentDidMount(){
-        console.log(this.props.show1)
         if(!this.props.show1){
-            window.addEventListener('click', this.props.handleClick.bind(this), true)
+            this.refs.div.addEventListener('click', this.props.handleClick.bind(this))
         }
         
     }

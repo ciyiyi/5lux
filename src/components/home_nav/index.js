@@ -37,7 +37,7 @@ export default class HomeNav extends Component {
                     flag ? <ul className="home_nav" ref="homeNav" onScroll={this.handleScroll.bind(this)}>
                         {
                             navList.map((item, index) => (
-                                <li>
+                                <li key={index}>
                                     {item.text}
                                 </li>
                             ))

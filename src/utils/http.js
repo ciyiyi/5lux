@@ -18,6 +18,7 @@ import qs from "qs"
  const post=(url,data)=>{
      let result=fetchPro(url,{
          credentials:"include",
+         method: "POST",
          headers:{
              "content-type":"application/x-www-form-urlencoded",
          },

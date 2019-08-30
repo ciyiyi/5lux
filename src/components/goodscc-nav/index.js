@@ -18,7 +18,7 @@ export class GoodsccNav extends Component {
                 <ul>
                     <li className="one">
                     <div>综合</div> 
-                    <div><img className="index" src="./img/down@2x.png"/></div></li>
+                    <div></div></li>
                     <li onClick={this.props.handleToShowType.bind(this,1)} ref='li'>分类</li>
                     <li>筛选<img className="filter" src="http://m.5lux.com/static/img/cateNewSelect@2x.png"/></li>
                 </ul>

@@ -14,7 +14,8 @@
 import {toShowFilterListAction} from "../../action/actionCreator"
 export const mapStateToProps = (state)=>({
     fashionType:state.fashion.fashionType,
-    goodsccId:state.fashion.goodsccId
+    goodsccId:state.fashion.goodsccId,
+    show1:state.fashion.show1,
     
 })
 
@@ -22,7 +23,6 @@ export const mapStateToProps = (state)=>({
 export const mapDispatchToProps = (dispatch)=>({
     handleShowDetial(params){
         let listId=Number(params.listItem)+1;
-        console.log(Number(params.listItem)+1,"()()()()")
         dispatch(toShowFilterListAction(listId))
     }
 })

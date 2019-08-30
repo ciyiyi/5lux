@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import {createAction} from "redux-actions"
 import {fashion_detial} from "@api/fashion"
 
@@ -33,7 +34,7 @@ export const toShowAction=(value,flag)=>({
 })
 
 export const changeShow1Action=(value)=>({
-    type:"CHANGESHOW1"
+    type:"CHANGE_SHOW1"
 })
 export const changeAsyncShow1Action=()=>{
     return (dispatch)=>{
