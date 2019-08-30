@@ -1,4 +1,3 @@
-
 import React, { Component,Fragment } from 'react';
 import Layout from "@layout";
 import {Route} from "react-router-dom"
@@ -12,18 +11,16 @@ class BaseRoute extends Component {
         if(children){
             return (
                 <Layout {...rest}>
-  <Route path={path} render={()=>{return(
-      <Fragment>
-          <Route component={component}/>
-          {
+                    <Route path={path} render={()=>{return(
+                    <Fragment>
+                     <Route component={component}/>
+                     {
                   children.map((item,index)=>(
                       <Route key={index} path={item.path} component={item.component}/>
                   ) )
-          }
-      </Fragment>)}}/> 
-  </Layout>
-    
-  
+                 }
+                </Fragment>)}}/> 
+                 </Layout>
           );
         }else{
             
@@ -31,11 +28,9 @@ class BaseRoute extends Component {
                 <Layout {...rest}>
                 <Route path={path} component={component}/>
             </Layout>
-            )
-              
+            )     
         }
     }
 }
-
-export default auth(BaseRoute);
+    export default auth(BaseRoute);
 

@@ -9,7 +9,7 @@ import BScrollComponent from "@common/bscroll";
 import BannerCarousel from "@components/carousel"
 import CenterNav from "@components/home_center_nav"
 
-export class Home extends Component {
+class Home extends Component {
   constructor() {
      super()
       this.state = {
@@ -195,4 +195,6 @@ export class Home extends Component {
   }
 }
 
+
 export default Home;
+
