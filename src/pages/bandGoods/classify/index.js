@@ -29,8 +29,8 @@ class App extends Component {
     );
   }
 
-  handleClick(){
-    this.props.handle(false);
+  handleClick(e){
+    this.props.handle(e);
   }
 }
 

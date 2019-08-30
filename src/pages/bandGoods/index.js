@@ -150,7 +150,8 @@ class BandGoods extends Component {
 // console.log(this.state.pname);
     }
 
-    handle(val){    
+    handle(e){   
+        e.stopPropagation(); 
         console.log(111);
         this.setState({
             flagF:false,
@@ -166,7 +167,8 @@ class BandGoods extends Component {
         })
     }
 
-    handleClickF(){
+    handleClickF(e){
+        e.stopPropagation();
         this.setState({
             flagF:true,
         })

@@ -1,9 +1,7 @@
 import style from 'styled-components';
 
 export const TitleStyle=style.div`
-    .now{
-        background:#ccc;
-    }
+    
     float:left    
     height:12rem;
     width:1.8rem;

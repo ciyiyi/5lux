@@ -82,7 +82,7 @@ export const GoodsStyle=style.div`
         }
     }
     .hidden{
-        left:-.89rem;
+        left:-.3rem;
         position:absolute;
         width:7.5rem;
         background:#fff;
