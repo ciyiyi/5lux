@@ -62,11 +62,7 @@ const BrandList=Loadable({
     loading:Loading
 
 })
-const HyperMarket=Loadable({
-    loader:()=>import("./hypermarket"),
-    loading:Loading
 
-})
 const Service=Loadable({
     loader:()=>import("./service"),
     loading:Loading
@@ -75,7 +71,7 @@ const Service=Loadable({
 
 const Goods=Loadable({
     loader:()=>import ("./bandGoods"),
-
+    loading:Loading
 })
 
 
