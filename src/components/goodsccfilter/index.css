@@ -1,4 +1,4 @@
-.rgba{width: 7.5rem;height: 12.5rem;background-color:rgba(0,0,0,0.6);position: absolute;top:.8rem;}
+.rgba{width: 7.5rem;height: 12.5rem;background-color:rgba(0,0,0,0.6);position: fixed;top:.8rem;}
 .allCate{width: 80%;height: 12.5rem;background:#f2f2f2;position: absolute;right:0;font-size: 0.26rem;padding-left: 0.2rem;}
 .goodsTypeItem{display: flex;justify-content: space-between;height: 0.8rem;border-bottom: .02rem solid #ccc;line-height: 0.8rem;}
 .showItemUl{display: flex;flex-wrap: wrap;background:#fff;}

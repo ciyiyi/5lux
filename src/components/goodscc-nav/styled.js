@@ -4,7 +4,7 @@ export const GoodsNav = styled.div `
     height:0.8rem;
     width:100%;
     border:0.02rem solid #ccc;
-    position:absolute;
+    position:fixed;
     top:.88rem;
     right:0;
     font-size:0.28rem;

@@ -24,9 +24,9 @@ export class FashionDetial extends Component {
   }
   async componentDidMount() {
 
-    console.log(this.props.goods_gallery, "已经进入详情页")
-    console.log(this.props.a, "测试");
-    console.log(this.props.installment_info, "installment_info");
+    // console.log(this.props.goods_gallery, "已经进入详情页")
+    // console.log(this.props.a, "测试");
+    // console.log(this.props.installment_info, "installment_info");
     let carouselData=await carousel_api();
     this.setState({
       id: this.props.productId,
@@ -35,8 +35,6 @@ export class FashionDetial extends Component {
       carousel:carouselData.data.banner_adv_info,
      
     }); 
-    let goodsparams=await goods_params(this.state.id)
-    console.log(goodsparams,"显示此商品不存在")
   }
 
   render() {

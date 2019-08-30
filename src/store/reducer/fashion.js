@@ -14,10 +14,10 @@ const defaultState = {
 
 export default handleActions({
     TODETAIL_PRODUCTION:(state,action)=>{
-        console.log(action.value,"新");//有所有信息
+        
         let newState=JSON.parse(JSON.stringify(state));
         newState.productId=action.value;
-        // console.log(action.id,"id")
+       
         console.log(action.value.data,"fashion-store")
         newState.goods_gallery=action.value.data.goods_gallery;
         newState.installment_info=action.value.data.installment_info;
@@ -36,16 +36,16 @@ export default handleActions({
         }
         return newData;
     },
-    CHANGESHOW1:(state,action)=>{
-        let newData=JSON.parse(JSON.stringify(state));
+    CHANGE_SHOW1:(state,action)=>{
+        let newData1=JSON.parse(JSON.stringify(state));
         alert("改变");
-        newData.show1=true;
-        return newData;
+        newData1.show1=true;
+        return newData1;
     },
     SHOWFILTER_LIST:(state,action)=>{
         let newDataid=JSON.parse(JSON.stringify(state));
         newDataid.goodsccId=action.id;
-        alert("++++++++")
+        newDataid.show1=true;
         return newDataid;
     }
    

@@ -2,7 +2,7 @@ import styled from "styled-components"
 export const ItemWrapper=styled.div`
  margin-top:1.68rem;
     ul{
-        height:5.75rem;
+       
         width:100%;
         display:flex;
         flex-wrap:wrap;

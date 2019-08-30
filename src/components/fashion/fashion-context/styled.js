@@ -17,7 +17,6 @@ export const ContextWrapper = styled.div `
         li{
             width:50%;
             height:8.5rem;
-            background:red;
             img{
                 width:3.75rem;
                 height:6.45rem;

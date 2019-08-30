@@ -7,9 +7,9 @@ export const mapStateToProps = (state)=>({
 
 export const mapDispatchToProps = (dispatch)=>({
    handleClick(e){
-     console.log(e.srcElement.className!=="goodsTypeItem")
-      if(e.srcElement.className!=="goodsTypeItem"){
-         //  alert(1)
+      e.stopPropagation();
+      if(e.srcElement.className!=="goodsTypeItem" && e.srcElement.className!=="showItem" && e.srcElement.className !==""){
+         alert(12)
           dispatch(changeShow1Action)
       }
   }

@@ -16,6 +16,7 @@ module.exports = (app)=>{
     app.use(proxy("/promote",{
         target:"http://m.5lux.com",
         changeOrigin:true,
+        
        
     }));
     app.use(proxy("/good",{
