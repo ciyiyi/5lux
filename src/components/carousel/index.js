@@ -15,6 +15,7 @@ export class BannerCarousel extends Component {
         this.setState({
           data: data.data,
         })
+        console.log(data,"轮播图")
     }
     render() {
         return (
@@ -22,7 +23,7 @@ export class BannerCarousel extends Component {
             <Carousel
               autoplay={true}
               infinite={true}
-              style={{ width: "100%", marginLeft: 0, marginRight: 0 }}
+              style={{ width: "100%", marginLeft: 0, marginRight: 0, }}
               dotStyle={{ width: "0.26rem", height: "0.26rem",marginBottom:'0.26rem' }}
               dotActiveStyle={{ width: "0.26rem", height: "0.26rem",marginBottom:'0.26rem' }}
             >

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom"
 import { index_button } from "@api/home"
 export class CenterNav extends Component {
     constructor() {
@@ -22,18 +23,23 @@ export class CenterNav extends Component {
             {
               dataBtn.map((item, index) => {
                 return (
-                  <li className="list_item" key={index}>
-                    <a href={item.ad_link}>
+                  <Link className="list_item" key={index} to={(index==4) ? '/brand' : ''}>
+                   
                       <img className="list_img_item" src={item.ad_code} alt="" />
-                    </a>
+                 
                     {item.ad_name}
-                  </li>
+                  </Link>
                 )
               })
             }
           </ul>
             </div>
         );
+    }
+    handleToBrand(index){
+          if(index===4){
+            console.log(this.props)
+          }
     }
 }
 
