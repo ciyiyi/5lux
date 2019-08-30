@@ -1,16 +1,33 @@
+
 import React, { Component } from 'react';
 import Layout from "@layout";
 import {Route} from "react-router-dom"
 import auth from "@common/auth"
-export class BaseRoute extends Component {
+
+
+class BaseRoute extends Component {
     render() {
-        let {path,component,...rest}=this.props;
+        let {component,path,children,...rest}=this.props;
+        console.log(children);
         return (
-            <Layout {...rest}>
-                <Route path={path} component={component}/>
-            </Layout>
+
+              <Layout {...rest}>
+<Route path={path} render={()=>{return(
+    <Fragment>
+        <Route component={component}/>
+        {
+            children.map((item,index)=>(
+                <Route key={index} path={item.path} component={item.component}/>
+            ) )
+
+        }
+    </Fragment>)}}/> 
+</Layout>
+  
+
         );
     }
 }
 
 export default auth(BaseRoute);
+

@@ -7,4 +7,5 @@ export const Page=styled.div`
     right:0;
     padding-top:0.88rem;
     
+    padding-bottom:1rem;
 `

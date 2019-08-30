@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {routeConfig} from "@router"
 import {Switch,Redirect} from "react-router-dom"
 import BaseRoute from "@common/baseRoute"
@@ -10,6 +11,7 @@ import BaseRoute from "@common/baseRoute"
         {
           routeConfig.map((item,index)=>(
            <BaseRoute key={index} {...item}/>
+
           ))
         }
       </Switch>

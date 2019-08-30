@@ -1,4 +1,4 @@
-import {Home,Login,Fashion,FashionDetial,Goodscc} from "@pages"
+import {HyperMarket,Brand,Classify,Title,Goods} from '@pages';
 
 export const tabBarRoute=[
     {
@@ -9,7 +9,50 @@ export const tabBarRoute=[
         },
         name:"首页",
 
+    },
+    {
+        path:"/hypermarket",
+        component:HyperMarket,
+        meta:{
+            flag:true
+        },
+        children:[],
+        name:"商城",
+    },
+    {
+        path:"/brand",
+        component:Brand,
+        meta:{
+            flag:true
+        },
+        name:"品牌",
+        children:[
+            {
+                path:"/brand/brandtype",
+                component:Classify,
+                meta:{
+                    flag:false,
+                },
+                name:"分类"
+            },
+            {
+                path:"/brand/title",
+                component:Title,
+                meta:{
+                    flag:false,
+                },
+                name:"列表"
+            },
+            {
+                path:"/brand/detail/:id",
+                component:Goods,
+                meta:{
+                    flag:false,
+                },
+                name:"品牌商品"
+            },
 
+        ],
     }
 ]
 

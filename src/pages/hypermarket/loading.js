@@ -9,21 +9,15 @@ import BScrollComponent from "@common/bscroll";
 import BannerCarousel from "@components/carousel"
 import CenterNav from "@components/home_center_nav"
 
-export class Home extends Component {
-  constructor() {
-     super()
-      this.state = {
-      adv1: [],
-      flash: [],
-      vip_member: [],
-      article_list:[],
-      page:0,
-      goodsList:[],
-      addNewList:[],
-      flag:true
+class Loading extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
     }
     
-  }
  
 
   async componentDidMount() {
@@ -195,4 +189,4 @@ export class Home extends Component {
   }
 }
 
-export default Home;
+export default Loading;
